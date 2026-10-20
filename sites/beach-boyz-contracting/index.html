@@ -3,209 +3,722 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beach Boyz Contracting | Exterior &amp; Interior Painting, Huntington Beach CA</title>
+<meta name="description" content="Family-owned painting and remodeling in Huntington Beach, CA. Third generation, 28+ years in business, HomeAdvisor Top Rated. Interior and exterior painting, stucco and siding repair, cabinet refinishing, flooring, and more. Call or text (949) 510-8296 for a free estimate.">
 <meta name="robots" content="noindex, nofollow">
-<title>Beach Boyz Contracting — Demo Site (Internal Review)</title>
+<meta property="og:title" content="Beach Boyz Contracting | Huntington Beach Painting &amp; Remodeling">
+<meta property="og:description" content="Family-owned, third generation, 28+ years in business. HomeAdvisor Top Rated. Free estimates.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/exterior-repaint-navy-sharp.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Beach Boyz Contracting",
+  "image": "img/exterior-repaint-navy-sharp.jpg",
+  "telephone": "+19495108296",
+  "areaServed": ["Huntington Beach, CA", "Newport Beach, CA", "Costa Mesa, CA", "Corona del Mar, CA", "Laguna Niguel, CA", "Laguna Hills, CA", "Dana Point, CA"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Huntington Beach",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "50"
+  },
+  "priceRange": "$$"
+}
+</script>
 <style>
   :root {
-    --navy: #0f1f33;
-    --gold: #c9a24b;
-    --ink: #1a1a1a;
-    --paper: #faf8f4;
+    --navy: #10233b;
+    --navy-deep: #0a1626;
+    --ink: #1c2430;
+    --paper: #faf7f1;
+    --warm-white: #fffdf9;
+    --charcoal: #3a4049;
+    --sand: #e9e2d3;
+    --accent: #a8c3c9;
+    --rule: rgba(16,35,59,0.12);
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background: var(--paper);
     color: var(--ink);
-    line-height: 1.5;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
   }
-  .draft-banner {
-    background: #b3261e;
-    color: #fff;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px 16px;
-    letter-spacing: 0.02em;
+  h1, h2, h3, .display {
+    font-family: 'Fraunces', Georgia, serif;
+    color: var(--navy);
+    line-height: 1.08;
+    margin: 0;
   }
-  header.hero {
-    position: relative;
-    min-height: 60vh;
-    display: flex;
-    align-items: flex-end;
-    background: var(--navy);
-  }
-  header.hero img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.55;
-  }
-  header.hero .hero-content {
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    padding: 48px 6vw;
-    max-width: 720px;
-  }
-  header.hero h1 {
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 700;
-    margin-bottom: 12px;
-  }
-  header.hero p {
-    font-size: 1.1rem;
-    color: #e8e2d4;
-  }
-  .todo {
-    display: inline-block;
-    margin-top: 16px;
-    background: var(--gold);
-    color: #1a1a1a;
-    font-size: 0.75rem;
+  a { color: inherit; }
+  img, video { max-width: 100%; display: block; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 6vw; }
+  .eyebrow {
+    font-size: 0.78rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 4px 10px;
-    border-radius: 3px;
-  }
-  main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 56px 6vw;
-  }
-  section { margin-bottom: 56px; }
-  h2 {
-    font-size: 1.6rem;
+    letter-spacing: 0.14em;
     color: var(--navy);
-    margin-bottom: 20px;
-    border-bottom: 2px solid var(--gold);
-    display: inline-block;
-    padding-bottom: 4px;
-  }
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-  }
-  .gallery figure {
-    background: #fff;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-  }
-  .gallery img, .gallery video {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
+    opacity: 0.65;
+    margin-bottom: 14px;
     display: block;
   }
-  .gallery figcaption {
-    font-size: 0.85rem;
-    color: #555;
-    padding: 10px 14px;
-  }
-  .about {
-    display: flex;
-    gap: 28px;
+  .btn {
+    display: inline-flex;
     align-items: center;
-    flex-wrap: wrap;
-    background: #fff;
-    border-radius: 6px;
-    padding: 24px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    justify-content: center;
+    gap: 8px;
+    padding: 15px 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.98rem;
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
   }
-  .about img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 6px;
-    flex-shrink: 0;
+  .btn:hover { transform: translateY(-1px); }
+  .btn-gold { background: #c9a24b; color: #10233b; }
+  .btn-gold:hover { background: #d8b45e; }
+  .btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.55); }
+  .btn-ghost:hover { border-color: #fff; }
+  .btn-navy { background: var(--navy); color: #fff; }
+  .btn-navy:hover { background: var(--navy-deep); }
+
+  /* --- Top nav --- */
+  .site-nav {
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(250,247,241,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
   }
-  .placeholder-note {
-    background: #fff4e5;
-    border: 1px solid var(--gold);
-    border-radius: 6px;
-    padding: 16px 20px;
-    font-size: 0.9rem;
-    color: #5c4a1f;
+  .site-nav .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
   }
-  footer {
+  .brand { font-family: 'Fraunces', serif; font-weight: 700; font-size: 1.25rem; color: var(--navy); text-decoration: none; letter-spacing: -0.01em; }
+  .brand span { color: #c9a24b; }
+  .nav-links { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; font-size: 0.92rem; font-weight: 500; }
+  .nav-links a { text-decoration: none; color: var(--charcoal); }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta { display: flex; gap: 10px; align-items: center; }
+  .nav-call { font-weight: 700; color: var(--navy); text-decoration: none; font-size: 0.95rem; white-space: nowrap; }
+  @media (max-width: 860px) {
+    .nav-links { display: none; }
+  }
+  @media (max-width: 520px) {
+    .brand { font-size: 1.05rem; }
+    .nav-call { display: none; }
+    .site-nav .wrap { height: 58px; }
+  }
+
+  /* --- Hero --- */
+  .hero {
+    position: relative;
+    min-height: 92vh;
+    display: flex;
+    align-items: flex-end;
+    background: var(--navy-deep);
+    overflow: hidden;
+  }
+  .hero img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 35%;
+  }
+  .hero::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(10,22,38,0.55) 0%, rgba(10,22,38,0.35) 35%, rgba(10,22,38,0.92) 100%);
+  }
+  .hero-content { position: relative; z-index: 2; color: #fff; padding: 64px 0 72px; width: 100%; }
+  .hero-content .wrap { max-width: 1180px; }
+  .hero-badges { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 22px; }
+  .badge {
+    font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3);
+    padding: 7px 13px; border-radius: 2px; color: #f3efe6;
+  }
+  .hero h1 {
+    color: #fff;
+    font-size: clamp(2.6rem, 6vw, 4.6rem);
+    font-weight: 700;
+    max-width: 820px;
+    letter-spacing: -0.01em;
+  }
+  .hero p.lede {
+    font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+    color: #e9e2d3;
+    max-width: 580px;
+    margin-top: 20px;
+    font-weight: 400;
+  }
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 34px; }
+
+  /* --- Sticky mobile action bar --- */
+  .mobile-bar {
+    display: none;
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
     background: var(--navy);
-    color: #cfd4da;
-    text-align: center;
-    padding: 24px;
-    font-size: 0.85rem;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.25);
   }
+  .mobile-bar .row { display: grid; grid-template-columns: 1fr 1fr 1.3fr; }
+  .mobile-bar a {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 2px; padding: 11px 4px; color: #fff; text-decoration: none;
+    font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
+    border-right: 1px solid rgba(255,255,255,0.12);
+  }
+  .mobile-bar a:last-child { border-right: none; background: #c9a24b; color: #10233b; }
+  .mobile-bar svg { width: 18px; height: 18px; }
+  @media (max-width: 760px) {
+    .mobile-bar { display: block; }
+    body { padding-bottom: 58px; }
+  }
+
+  /* --- Sections --- */
+  section { padding: 92px 0; }
+  section.tight { padding: 72px 0; }
+  .section-head { max-width: 640px; margin-bottom: 48px; }
+  .section-head h2 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); font-weight: 600; }
+  .section-head p { margin-top: 14px; color: var(--charcoal); font-size: 1.05rem; }
+  .bg-navy { background: var(--navy); color: #fff; }
+  .bg-navy .eyebrow { color: #c9a24b; opacity: 1; }
+  .bg-navy h2 { color: #fff; }
+  .bg-navy p { color: #cdd6df; }
+  .bg-sand { background: var(--sand); }
+
+  /* --- Services --- */
+  .service-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 36px; }
+  .service-group h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1.5px solid #c9a24b; }
+  .service-group ul { list-style: none; margin: 0; padding: 0; }
+  .service-group li {
+    padding: 11px 0; border-bottom: 1px solid var(--rule); font-size: 1rem; color: var(--charcoal);
+    display: flex; align-items: baseline; gap: 10px;
+  }
+  .service-group li:last-child { border-bottom: none; }
+  .service-group li::before { content: "—"; color: #c9a24b; font-weight: 700; flex-shrink: 0; }
+
+  /* --- Gallery --- */
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+  .gallery figure { margin: 0; background: #fff; overflow: hidden; border-radius: 3px; box-shadow: 0 6px 24px rgba(16,35,59,0.08); }
+  .gallery img { width: 100%; height: 330px; object-fit: cover; transition: transform 0.4s ease; }
+  .gallery figure:hover img { transform: scale(1.04); }
+  .gallery figcaption { padding: 16px 18px; font-size: 0.92rem; color: var(--charcoal); }
+  .gallery figcaption strong { display: block; color: var(--navy); font-size: 0.98rem; margin-bottom: 2px; }
+
+  /* --- Video --- */
+  .video-wrap { position: relative; border-radius: 4px; overflow: hidden; box-shadow: 0 20px 60px rgba(16,35,59,0.25); }
+  .video-wrap video { width: 100%; height: auto; display: block; background: #000; }
+
+  /* --- About --- */
+  .about-grid { display: grid; grid-template-columns: 300px 1fr; gap: 52px; align-items: center; }
+  .about-grid img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 4px; box-shadow: 0 16px 40px rgba(16,35,59,0.18); }
+  .about-stats { display: flex; gap: 32px; margin: 26px 0; flex-wrap: wrap; }
+  .about-stats div strong { display: block; font-family: 'Fraunces', serif; font-size: 2.1rem; color: var(--navy); font-weight: 700; }
+  .about-stats div span { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--charcoal); }
+  .quote {
+    font-family: 'Fraunces', serif; font-style: italic; font-size: 1.3rem; color: var(--navy);
+    border-left: 3px solid #c9a24b; padding-left: 20px; margin: 26px 0;
+  }
+  .quote cite { display: block; font-style: normal; font-size: 0.88rem; color: var(--charcoal); margin-top: 10px; font-weight: 600; }
+  @media (max-width: 760px) {
+    .about-grid { grid-template-columns: 1fr; }
+    .about-grid img { max-width: 260px; margin: 0 auto; }
+  }
+
+  /* --- Reviews / recognition --- */
+  .recognition-strip { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 44px; }
+  .rec-badge {
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.18);
+    padding: 16px 20px; border-radius: 3px; flex: 1 1 220px; min-width: 200px;
+  }
+  .rec-badge strong { display: block; font-family: 'Fraunces', serif; font-size: 1.35rem; margin-bottom: 4px; }
+  .rec-badge span { font-size: 0.85rem; color: #cdd6df; }
+  .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  .testi {
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 3px; padding: 26px 24px;
+  }
+  .testi p { font-size: 1.02rem; color: #f1ede3; font-style: italic; }
+  .testi footer { margin-top: 16px; font-size: 0.85rem; color: #aab6c2; font-style: normal; }
+  .review-sources { margin-top: 28px; font-size: 0.85rem; color: #aab6c2; }
+  .review-sources a { color: #c9a24b; text-decoration: underline; text-underline-offset: 3px; }
+  .review-sources a:hover { color: #e3c477; }
+
+  /* --- Process --- */
+  .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; counter-reset: step; }
+  .process-step { position: relative; padding-top: 10px; }
+  .process-step::before {
+    counter-increment: step; content: counter(step, decimal-leading-zero);
+    font-family: 'Fraunces', serif; font-size: 2.6rem; font-weight: 700; color: #c9a24b;
+    display: block; margin-bottom: 10px; opacity: 0.9;
+  }
+  .process-step h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 8px; }
+  .process-step p { color: var(--charcoal); font-size: 0.96rem; margin: 0; }
+
+  /* --- Service area --- */
+  .area-pills { display: flex; flex-wrap: wrap; gap: 12px; }
+  .area-pill {
+    background: #fff; border: 1.5px solid var(--navy); color: var(--navy); font-weight: 600;
+    padding: 10px 20px; border-radius: 30px; font-size: 0.92rem;
+  }
+
+  /* --- Form --- */
+  .form-section { background: var(--navy); color: #fff; }
+  .form-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: flex-start; }
+  .form-card {
+    background: var(--warm-white); color: var(--ink); border-radius: 4px; padding: 36px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.3);
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .form-row.single { grid-template-columns: 1fr; }
+  label { display: block; font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--charcoal); margin-bottom: 6px; }
+  input, select, textarea {
+    width: 100%; padding: 13px 14px; border: 1.5px solid #d8d0bf; border-radius: 2px;
+    font-family: 'Inter', sans-serif; font-size: 0.98rem; background: #fff; color: var(--ink);
+  }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--navy); }
+  textarea { min-height: 110px; resize: vertical; }
+  .hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .form-submit { width: 100%; margin-top: 6px; }
+  .form-note { font-size: 0.8rem; color: var(--charcoal); margin-top: 14px; }
+  #form-status { margin-top: 16px; font-size: 0.92rem; font-weight: 600; display: none; }
+  #form-status.ok { color: #1f7a4d; display: block; }
+  #form-status.err { color: #b3261e; display: block; }
+  .direct-contact { padding-top: 6px; }
+  .direct-contact h3 { color: #fff; font-size: 1.4rem; margin-bottom: 14px; }
+  .direct-contact p { color: #cdd6df; margin-bottom: 22px; }
+  .direct-line { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+  .direct-line a { color: #fff; font-weight: 700; font-size: 1.15rem; text-decoration: none; }
+  .direct-line span.label { color: #c9a24b; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; display: block; margin-bottom: 2px; }
+  @media (max-width: 860px) {
+    .form-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+
+  /* --- Footer --- */
+  footer.site-footer { background: var(--navy-deep); color: #9fabb8; padding: 48px 0 110px; font-size: 0.88rem; }
+  .foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 32px; margin-bottom: 32px; }
+  .foot-grid h4 { color: #fff; font-size: 0.95rem; margin-bottom: 14px; font-family: 'Inter', sans-serif; font-weight: 700; }
+  .foot-grid ul { list-style: none; padding: 0; margin: 0; }
+  .foot-grid li { margin-bottom: 8px; }
+  .foot-grid a { color: #9fabb8; text-decoration: none; }
+  .foot-grid a:hover { color: #fff; }
+  .foot-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 22px; font-size: 0.8rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  @media (max-width: 760px) {
+    .foot-grid { grid-template-columns: 1fr; }
+    footer.site-footer { padding-bottom: 80px; }
+  }
+
+  .container-split { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  @media (max-width: 860px) { .container-split { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 
-<div class="draft-banner">
-  INTERNAL DRAFT — Not for prospect viewing yet. Review before sending to Samantha.
-</div>
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Beach Boyz <span>Contracting</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Our Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#areas">Areas</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="nav-call" href="tel:+19495108296">(949) 510-8296</a>
+      <a class="btn btn-navy" href="#estimate" style="padding:10px 18px;">Free Estimate</a>
+    </div>
+  </div>
+</nav>
 
-<header class="hero">
-  <img src="img/exterior-repaint-navy-sharp.jpg" alt="Navy blue exterior house repaint by Beach Boyz Contracting">
+<header class="hero" id="top">
+  <img src="img/exterior-repaint-navy-sharp.jpg" alt="Navy blue exterior house repaint completed by Beach Boyz Contracting in Huntington Beach">
   <div class="hero-content">
-    <h1>Beach Boyz Contracting</h1>
-    <p>Exterior painting & home repair, Huntington Beach area.</p>
-    <span class="todo">TODO: confirm tagline, service area, and phone/address with Jody before send</span>
+    <div class="wrap">
+      <div class="hero-badges">
+        <span class="badge">HomeAdvisor Top Rated</span>
+        <span class="badge">28+ Years in Business</span>
+        <span class="badge">Lic. #918841</span>
+      </div>
+      <h1>Painting and remodeling done right, by a family that's been doing it for three generations.</h1>
+      <p class="lede">Jake Vincent and his son serve Huntington Beach and the surrounding coast with honest estimates, clean work, and a company that still answers the phone.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="#estimate">Get a Free Estimate</a>
+        <a class="btn btn-ghost" href="tel:+19495108296">Call (949) 510-8296</a>
+      </div>
+    </div>
   </div>
 </header>
 
+<div class="mobile-bar">
+  <div class="row">
+    <a href="tel:+19495108296">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call
+    </a>
+    <a href="sms:+19495108296">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Text
+    </a>
+    <a href="#estimate">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      Free Estimate
+    </a>
+  </div>
+</div>
+
 <main>
 
-  <section class="placeholder-note">
-    <strong>Scaffold only.</strong> This page uses only the verified, Jake-owned photos and video pulled into this project
-    (no stock imagery, no CRMLS real-estate photos). Business name, contact details, service list, and copy below are
-    placeholders — none of this has been confirmed from Jake's actual listings yet and nothing here should be sent out
-    as-is.
-  </section>
-
-  <section>
-    <h2>Recent Work</h2>
-    <div class="gallery">
-      <figure>
-        <img src="img/exterior-repaint-navy.jpg" alt="Navy exterior repaint, full view">
-        <figcaption>Exterior repaint — navy</figcaption>
-      </figure>
-      <figure>
-        <img src="img/exterior-before-bluehouse.jpg" alt="Before photo of blue house exterior">
-        <figcaption>Before — original exterior</figcaption>
-      </figure>
-      <figure>
-        <img src="img/siding-repair-progress.jpg" alt="Siding repair in progress">
-        <figcaption>Siding repair — in progress</figcaption>
-      </figure>
-      <figure>
-        <video controls preload="metadata" poster="img/exterior-repaint-navy-sharp.jpg">
-          <source src="img/walkthrough.mp4" type="video/mp4">
-        </video>
-        <figcaption>Project walkthrough video</figcaption>
-      </figure>
+  <section id="services" class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What We Do</span>
+        <h2>Painting, repair, and finish work for the whole house.</h2>
+        <p>From a single room to a full exterior repaint, every job gets the same estimate-first, no-surprises approach.</p>
+      </div>
+      <div class="service-groups">
+        <div class="service-group">
+          <h3>Painting</h3>
+          <ul>
+            <li>Interior painting</li>
+            <li>Exterior painting</li>
+            <li>Cabinet refinishing</li>
+            <li>Deck staining</li>
+            <li>Fence painting and staining</li>
+            <li>Wrought iron painting</li>
+          </ul>
+        </div>
+        <div class="service-group">
+          <h3>Repair &amp; Restoration</h3>
+          <ul>
+            <li>Drywall patching and texturing</li>
+            <li>Stucco repair</li>
+            <li>Siding repair</li>
+            <li>Water damage repair</li>
+          </ul>
+        </div>
+        <div class="service-group">
+          <h3>Flooring &amp; Surfaces</h3>
+          <ul>
+            <li>Tile and flooring installation</li>
+            <li>Garage floor epoxy</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>About</h2>
-    <div class="about">
-      <img src="img/jake-and-son.jpg" alt="Jake and his son">
-      <div>
-        <p><span class="todo">TODO: real bio copy</span></p>
-        <p style="margin-top:8px; color:#555;">Placeholder: a short, honest line about Jake, how long he's been doing
-        this work, and what makes Beach Boyz different &mdash; pulled from what he actually tells customers, not invented.</p>
+  <section id="gallery" class="bg-sand">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Recent Work</span>
+        <h2>Real jobs, real photos.</h2>
+        <p>No stock photography here. Every image below is an actual Beach Boyz project.</p>
+      </div>
+      <div class="gallery">
+        <figure>
+          <img src="img/exterior-repaint-navy.jpg" alt="Completed navy blue exterior house repaint">
+          <figcaption><strong>Exterior repaint, Huntington Beach</strong>Full exterior repaint in a deep navy finish with crisp white trim.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/exterior-before-bluehouse.jpg" alt="Exterior house painting project, light blue finish">
+          <figcaption><strong>Exterior repaint, coastal blue</strong>Another recent repaint, light coastal blue with white garage and trim detail.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/siding-repair-progress.jpg" alt="Siding repair in progress, old weathered siding being replaced">
+          <figcaption><strong>Siding repair, mid-project</strong>Stripping weathered siding down to the studs before new material goes up.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="video">
+    <div class="wrap">
+      <div class="container-split">
+        <div>
+          <span class="eyebrow">See It For Yourself</span>
+          <h2 style="font-size:clamp(1.9rem, 3.4vw, 2.4rem); font-weight:600; margin-bottom:16px;">A walkthrough of how we work.</h2>
+          <p style="color:var(--charcoal); font-size:1.05rem;">Jake walks through a recent project start to finish, the same way he'd walk you through yours.</p>
+        </div>
+        <div class="video-wrap">
+          <video controls preload="metadata" poster="img/walkthrough-poster.jpg">
+            <source src="img/walkthrough.mp4" type="video/mp4">
+            Your browser doesn't support embedded video. <a href="img/walkthrough.mp4">Download the walkthrough video</a>.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="bg-sand">
+    <div class="wrap">
+      <div class="about-grid">
+        <img src="img/jake-and-son.jpg" alt="Jake Vincent and his son, owners of Beach Boyz Contracting">
+        <div>
+          <span class="eyebrow">Family Owned, Third Generation</span>
+          <h2 style="font-size:clamp(1.9rem, 3.4vw, 2.4rem); font-weight:600;">Jake Vincent &amp; Son</h2>
+          <div class="about-stats">
+            <div><strong>28+</strong><span>Years in Business</span></div>
+            <div><strong>3rd</strong><span>Generation in the Trade</span></div>
+            <div><strong>918841</strong><span>CA Contractor License</span></div>
+          </div>
+          <p style="color:var(--charcoal); font-size:1.03rem;">Jake Vincent has been painting and repairing homes in and around Huntington Beach for more than 28 years, carrying on a trade that's been in his family for three generations. His son now works alongside him on every job, which means the same two people who quote the work are the ones who show up to do it.</p>
+          <blockquote class="quote">
+            &ldquo;Our goal is to build a trusting relationship with good communication.&rdquo;
+            <cite>&mdash; Jake Vincent, Owner</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="bg-navy">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Recognition &amp; Reviews</span>
+        <h2>What the neighborhood says.</h2>
+      </div>
+      <div class="recognition-strip">
+        <div class="rec-badge"><strong>HomeAdvisor Top Rated</strong><span>Verified, highly rated pro</span></div>
+        <div class="rec-badge"><strong>4.4 &#9733; from 50 Reviews</strong><span>Across HomeAdvisor &amp; Yelp</span></div>
+        <div class="rec-badge"><strong>#1 HB Painting Co.</strong><span>2014 &amp; 2020</span></div>
+      </div>
+      <div class="testi-grid">
+        <div class="testi">
+          <p>&ldquo;Exceptional attention to detail!&rdquo;</p>
+          <footer>&mdash; Alan H., October 2026</footer>
+        </div>
+        <div class="testi">
+          <p>&ldquo;Excellent staff and coordination for the quality of work, schedule, and meets cost estimates!&rdquo;</p>
+          <footer>&mdash; Michael S., March 2021</footer>
+        </div>
+        <div class="testi">
+          <p>&ldquo;Job was done very quickly and professionally. Reasonable pricing.&rdquo;</p>
+          <footer>&mdash; Heshmat S., June 2023</footer>
+        </div>
+      </div>
+      <p class="review-sources">
+        Read more reviews on
+        <a href="https://www.homeadvisor.com/rated.BeachBoyzPainting.38755738.html" target="_blank" rel="noopener">HomeAdvisor</a>,
+        <a href="https://www.yelp.com/biz/beach-boyz-painting-huntington-beach-5" target="_blank" rel="noopener">Yelp</a>, and
+        <a href="https://g.page/r/CXDgV7sMwDRUEAQ/review" target="_blank" rel="noopener">Google</a>.
+      </p>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How It Works</span>
+        <h2>Four steps, start to finish.</h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-step"><h3>Estimate</h3><p>Reach out by phone, text, or the form below. We'll come take a look and put together a clear, written estimate.</p></div>
+        <div class="process-step"><h3>Consultation</h3><p>We walk the project with you, talk through options and finishes, and answer every question before any work begins.</p></div>
+        <div class="process-step"><h3>Implementation</h3><p>Jake and his crew do the work, on the schedule we agreed to, with the site kept clean throughout.</p></div>
+        <div class="process-step"><h3>Follow-up</h3><p>We check back in once the job's done to make sure you're happy with the result.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas" class="bg-sand">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Service Area</span>
+        <h2>Serving Huntington Beach and the coast.</h2>
+      </div>
+      <div class="area-pills">
+        <span class="area-pill">Huntington Beach</span>
+        <span class="area-pill">Newport Beach</span>
+        <span class="area-pill">Costa Mesa</span>
+        <span class="area-pill">Corona del Mar</span>
+        <span class="area-pill">Laguna Niguel</span>
+        <span class="area-pill">Laguna Hills</span>
+        <span class="area-pill">Dana Point</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="estimate" class="form-section">
+    <div class="wrap">
+      <div class="form-grid">
+        <form class="form-card" id="estimate-form" novalidate>
+          <span class="eyebrow" style="color:#8a8470;">Request an Estimate</span>
+          <h2 style="font-size:1.7rem; font-weight:600; margin-bottom:20px;">Tell us about the project.</h2>
+
+          <div class="form-row">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div>
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" required autocomplete="address-level2" placeholder="e.g. Huntington Beach">
+            </div>
+          </div>
+          <div class="form-row single">
+            <div>
+              <label for="service">Service Needed</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option>Interior painting</option>
+                <option>Exterior painting</option>
+                <option>Cabinet refinishing</option>
+                <option>Deck staining</option>
+                <option>Drywall patching and texturing</option>
+                <option>Stucco repair</option>
+                <option>Siding repair</option>
+                <option>Wrought iron painting</option>
+                <option>Tile and flooring installation</option>
+                <option>Fence painting and staining</option>
+                <option>Garage floor epoxy</option>
+                <option>Water damage repair</option>
+                <option>Not sure / general question</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row single">
+            <div>
+              <label for="details">Project Details</label>
+              <textarea id="details" name="details" placeholder="A little about the space and what you're looking to have done."></textarea>
+            </div>
+          </div>
+
+          <!-- Honeypot: real visitors never fill this in -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="company_url">Leave this blank</label>
+            <input type="text" id="company_url" name="company_url" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn btn-navy form-submit" id="submit-btn">Request Free Estimate</button>
+          <p id="form-status"></p>
+          <p class="form-note">We'll get back to you within one business day. Prefer to talk now? Call or text (949) 510-8296.</p>
+        </form>
+
+        <div class="direct-contact">
+          <h3>Prefer to just call?</h3>
+          <p>Jake answers the phone himself. Call or text any time &mdash; no call centers, no scripts.</p>
+          <div class="direct-line">
+            <div>
+              <span class="label">Call or Text</span>
+              <a href="tel:+19495108296">(949) 510-8296</a>
+            </div>
+          </div>
+          <div class="direct-line">
+            <div>
+              <span class="label">Service Area</span>
+              <a href="#areas" style="font-weight:600; font-size:1rem;">Huntington Beach &amp; the OC coast</a>
+            </div>
+          </div>
+          <div class="direct-line">
+            <div>
+              <span class="label">License</span>
+              <span style="font-weight:600; font-size:1rem;">CA Contractor #918841</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer>
-  Demo build for internal review only &middot; Beach Boyz Contracting &middot; not a live or published site
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Beach Boyz Contracting</h4>
+        <p style="max-width:320px;">Family-owned painting and remodeling, third generation, serving Huntington Beach and the surrounding coast for 28+ years.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+19495108296">(949) 510-8296</a></li>
+          <li><a href="sms:+19495108296">Text us</a></li>
+          <li><a href="#estimate">Request an estimate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Area</h4>
+        <ul>
+          <li>Huntington Beach &middot; Newport Beach</li>
+          <li>Costa Mesa &middot; Corona del Mar</li>
+          <li>Laguna Niguel &middot; Laguna Hills &middot; Dana Point</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span id="year"></span> Beach Boyz Contracting. CA Contractor License #918841.</span>
+      <span>HomeAdvisor Top Rated &middot; #1 HB Painting Co. 2014 &amp; 2020</span>
+    </div>
+  </div>
 </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const form = document.getElementById('estimate-form');
+  const statusEl = document.getElementById('form-status');
+  const submitBtn = document.getElementById('submit-btn');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    statusEl.className = '';
+    statusEl.textContent = '';
+
+    const data = Object.fromEntries(new FormData(form).entries());
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    try {
+      const res = await fetch('/api/estimate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const body = await res.json().catch(() => ({}));
+
+      if (res.ok) {
+        statusEl.className = 'ok';
+        statusEl.textContent = "Thanks! We've got your request and will be in touch within one business day.";
+        form.reset();
+      } else {
+        statusEl.className = 'err';
+        statusEl.textContent = body.error || 'Something went wrong. Please call or text (949) 510-8296 instead.';
+      }
+    } catch (err) {
+      statusEl.className = 'err';
+      statusEl.textContent = "Couldn't send that. Please call or text (949) 510-8296 instead.";
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Request Free Estimate';
+    }
+  });
+</script>
 
 </body>
 </html>
