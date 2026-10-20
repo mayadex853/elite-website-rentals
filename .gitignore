@@ -1,0 +1,4 @@
+# Internal lead research (business owner info, scraped photos/reviews, build prompts)
+# Never commit this — it's working material for vetting prospects, not public content.
+leads/
+leads/**

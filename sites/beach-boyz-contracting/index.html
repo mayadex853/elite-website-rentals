@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Beach Boyz Contracting — Demo Site (Internal Review)</title>
+<style>
+  :root {
+    --navy: #0f1f33;
+    --gold: #c9a24b;
+    --ink: #1a1a1a;
+    --paper: #faf8f4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  .draft-banner {
+    background: #b3261e;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 16px;
+    letter-spacing: 0.02em;
+  }
+  header.hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    background: var(--navy);
+  }
+  header.hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.55;
+  }
+  header.hero .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 48px 6vw;
+    max-width: 720px;
+  }
+  header.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  header.hero p {
+    font-size: 1.1rem;
+    color: #e8e2d4;
+  }
+  .todo {
+    display: inline-block;
+    margin-top: 16px;
+    background: var(--gold);
+    color: #1a1a1a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 10px;
+    border-radius: 3px;
+  }
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 56px 6vw;
+  }
+  section { margin-bottom: 56px; }
+  h2 {
+    font-size: 1.6rem;
+    color: var(--navy);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+    padding-bottom: 4px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  .gallery figure {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  }
+  .gallery img, .gallery video {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .gallery figcaption {
+    font-size: 0.85rem;
+    color: #555;
+    padding: 10px 14px;
+  }
+  .about {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 6px;
+    padding: 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  }
+  .about img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  .placeholder-note {
+    background: #fff4e5;
+    border: 1px solid var(--gold);
+    border-radius: 6px;
+    padding: 16px 20px;
+    font-size: 0.9rem;
+    color: #5c4a1f;
+  }
+  footer {
+    background: var(--navy);
+    color: #cfd4da;
+    text-align: center;
+    padding: 24px;
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="draft-banner">
+  INTERNAL DRAFT — Not for prospect viewing yet. Review before sending to Samantha.
+</div>
+
+<header class="hero">
+  <img src="img/exterior-repaint-navy-sharp.jpg" alt="Navy blue exterior house repaint by Beach Boyz Contracting">
+  <div class="hero-content">
+    <h1>Beach Boyz Contracting</h1>
+    <p>Exterior painting & home repair, Huntington Beach area.</p>
+    <span class="todo">TODO: confirm tagline, service area, and phone/address with Jody before send</span>
+  </div>
+</header>
+
+<main>
+
+  <section class="placeholder-note">
+    <strong>Scaffold only.</strong> This page uses only the verified, Jake-owned photos and video pulled into this project
+    (no stock imagery, no CRMLS real-estate photos). Business name, contact details, service list, and copy below are
+    placeholders — none of this has been confirmed from Jake's actual listings yet and nothing here should be sent out
+    as-is.
+  </section>
+
+  <section>
+    <h2>Recent Work</h2>
+    <div class="gallery">
+      <figure>
+        <img src="img/exterior-repaint-navy.jpg" alt="Navy exterior repaint, full view">
+        <figcaption>Exterior repaint — navy</figcaption>
+      </figure>
+      <figure>
+        <img src="img/exterior-before-bluehouse.jpg" alt="Before photo of blue house exterior">
+        <figcaption>Before — original exterior</figcaption>
+      </figure>
+      <figure>
+        <img src="img/siding-repair-progress.jpg" alt="Siding repair in progress">
+        <figcaption>Siding repair — in progress</figcaption>
+      </figure>
+      <figure>
+        <video controls preload="metadata" poster="img/exterior-repaint-navy-sharp.jpg">
+          <source src="img/walkthrough.mp4" type="video/mp4">
+        </video>
+        <figcaption>Project walkthrough video</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>About</h2>
+    <div class="about">
+      <img src="img/jake-and-son.jpg" alt="Jake and his son">
+      <div>
+        <p><span class="todo">TODO: real bio copy</span></p>
+        <p style="margin-top:8px; color:#555;">Placeholder: a short, honest line about Jake, how long he's been doing
+        this work, and what makes Beach Boyz different &mdash; pulled from what he actually tells customers, not invented.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Demo build for internal review only &middot; Beach Boyz Contracting &middot; not a live or published site
+</footer>
+
+</body>
+</html>
