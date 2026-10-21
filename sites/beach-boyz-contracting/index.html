@@ -76,17 +76,38 @@
     transform: scaleX(0); transform-origin: left; transition: transform 0.12s linear;
   }
 
-  /* --- Caution-strip zone dividers --- */
+  /* --- Zone dividers: blueprint dimension-line style --- */
   .caution-strip {
-    position: relative; height: 16px;
-    background: repeating-linear-gradient(135deg, var(--navy-deep) 0 16px, var(--gold) 16px 32px);
+    position: relative; height: 84px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--paper);
   }
+  .caution-strip.on-sand { background: var(--sand); }
+  .caution-strip.on-navy { background: var(--navy-deep); }
+  .caution-strip::before {
+    content: ""; position: absolute; left: 6vw; right: 6vw; top: 50%; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(16,35,59,0.22), transparent);
+  }
+  .caution-strip.on-navy::before { background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); }
+  .caution-strip::after {
+    content: ""; position: absolute; left: 6vw; right: 6vw; top: 50%; height: 7px; transform: translateY(-50%);
+    background-image: repeating-linear-gradient(90deg, rgba(16,35,59,0.4) 0 1px, transparent 1px 15px);
+    mask-image: linear-gradient(90deg, black, black 38%, transparent 44%, transparent 56%, black 62%, black);
+    -webkit-mask-image: linear-gradient(90deg, black, black 38%, transparent 44%, transparent 56%, black 62%, black);
+    opacity: 0.55;
+  }
+  .caution-strip.on-navy::after { background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.3) 0 1px, transparent 1px 15px); }
   .caution-strip span {
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    background: var(--paper); color: var(--navy); font-family: var(--mono); font-size: 0.66rem; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.08em; padding: 5px 16px; border: 1.5px solid var(--navy);
-    border-radius: 3px; white-space: nowrap;
+    position: relative; z-index: 2; display: inline-flex; align-items: center; gap: 10px;
+    background: var(--paper); color: var(--navy); font-family: var(--mono); font-size: 0.7rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.14em; padding: 9px 20px; border: 1px solid rgba(16,35,59,0.16);
+    border-radius: 100px; white-space: nowrap;
   }
+  .caution-strip span::before, .caution-strip span::after {
+    content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0;
+  }
+  .caution-strip.on-sand span { background: var(--sand); }
+  .caution-strip.on-navy span { background: var(--navy-deep); color: #fff; border-color: rgba(255,255,255,0.22); }
   .wrap { max-width: 1180px; margin: 0 auto; padding: 0 6vw; }
   .eyebrow {
     font-family: var(--mono);
@@ -657,7 +678,7 @@
     </div>
   </section>
 
-  <div class="caution-strip"><span>Meet the Crew</span></div>
+  <div class="caution-strip on-sand"><span>Meet the Crew</span></div>
 
   <section id="about" class="bg-sand bp-grid-light">
     <div class="wrap">
@@ -750,7 +771,7 @@
     </div>
   </section>
 
-  <div class="caution-strip"><span>Ready When You Are</span></div>
+  <div class="caution-strip on-navy"><span>Ready When You Are</span></div>
 
   <section id="estimate" class="form-section bp-grid-dark">
     <div class="wrap">
