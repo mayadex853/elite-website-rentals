@@ -69,9 +69,23 @@
   a { color: inherit; }
   img, video { max-width: 100%; display: block; }
   .scroll-progress {
-    position: fixed; top: 0; left: 0; height: 3px; width: 100%; z-index: 60;
-    background: linear-gradient(90deg, var(--gold), #e3c477);
+    position: fixed; top: 0; left: 0; height: 4px; width: 100%; z-index: 60;
+    background:
+      repeating-linear-gradient(90deg, rgba(16,35,59,0.4) 0 2px, transparent 2px 24px),
+      linear-gradient(90deg, var(--gold), #e3c477);
     transform: scaleX(0); transform-origin: left; transition: transform 0.12s linear;
+  }
+
+  /* --- Caution-strip zone dividers --- */
+  .caution-strip {
+    position: relative; height: 16px;
+    background: repeating-linear-gradient(135deg, var(--navy-deep) 0 16px, var(--gold) 16px 32px);
+  }
+  .caution-strip span {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    background: var(--paper); color: var(--navy); font-family: var(--mono); font-size: 0.66rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em; padding: 5px 16px; border: 1.5px solid var(--navy);
+    border-radius: 3px; white-space: nowrap;
   }
   .wrap { max-width: 1180px; margin: 0 auto; padding: 0 6vw; }
   .eyebrow {
@@ -225,26 +239,18 @@
   .hero-phone {
     position: relative;
     flex-shrink: 0;
-    width: 290px;
+    width: 250px;
     aspect-ratio: 9 / 16;
-    border-radius: 34px;
-    border: 6px solid rgba(255,255,255,0.95);
+    border-radius: 14px;
     background: #000;
     overflow: hidden;
-    box-shadow: 0 30px 70px rgba(0,0,0,0.55), 0 6px 18px rgba(0,0,0,0.35);
-    transform: rotate(-3deg);
-    transition: transform 0.35s ease;
-  }
-  .hero-phone:hover { transform: rotate(0deg) translateY(-4px); }
-  .hero-phone .notch {
-    position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
-    width: 56px; height: 14px; background: rgba(0,0,0,0.85); border-radius: 10px; z-index: 4;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.45);
   }
   .hp-badge {
-    position: absolute; top: -15px; left: 50%; transform: translateX(-50%) rotate(-4deg);
-    background: var(--gold); color: var(--navy-deep); font-family: var(--mono); font-size: 0.66rem; font-weight: 700;
-    letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 13px; border-radius: 3px;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.35); z-index: 5; white-space: nowrap;
+    position: absolute; top: 12px; left: 12px;
+    background: var(--gold); color: var(--navy-deep); font-family: var(--mono); font-size: 0.64rem; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 11px; border-radius: 4px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.35); z-index: 5; white-space: nowrap;
     animation: hpFlash 1.3s steps(2, jump-none) infinite;
   }
   @keyframes hpFlash { 50% { opacity: 0.3; } }
@@ -253,30 +259,31 @@
   .hp-play {
     position: absolute; inset: 0; width: 100%; height: 100%;
     display: flex; align-items: center; justify-content: center;
-    background: linear-gradient(180deg, rgba(10,22,38,0.08) 0%, rgba(10,22,38,0.1) 55%, rgba(10,22,38,0.55) 100%);
+    background: linear-gradient(180deg, rgba(10,22,38,0.1) 0%, rgba(10,22,38,0.08) 55%, rgba(10,22,38,0.5) 100%);
     border: none; cursor: pointer; padding: 0; z-index: 3;
   }
   .hp-play .ring {
-    width: 58px; height: 58px; border-radius: 50%; background: var(--gold);
+    width: 54px; height: 54px; border-radius: 50%; background: var(--gold);
     display: flex; align-items: center; justify-content: center;
     box-shadow: 0 0 0 0 rgba(201,162,75,0.6);
     animation: hpPulse 1.8s ease-out infinite;
   }
-  .hp-play svg { width: 20px; height: 20px; fill: var(--navy-deep); margin-left: 3px; }
+  .hp-play svg { width: 18px; height: 18px; fill: var(--navy-deep); margin-left: 3px; }
   @keyframes hpPulse {
     0% { box-shadow: 0 0 0 0 rgba(201,162,75,0.55); }
     70% { box-shadow: 0 0 0 20px rgba(201,162,75,0); }
     100% { box-shadow: 0 0 0 0 rgba(201,162,75,0); }
   }
   .hp-caption {
-    position: absolute; left: 0; right: 0; bottom: 0; z-index: 3; padding: 14px 14px 16px;
-    font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.06em; text-transform: uppercase;
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 3; padding: 12px 14px 14px;
+    font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.06em; text-transform: uppercase;
     color: rgba(255,255,255,0.88);
   }
   @media (max-width: 900px) {
-    .hero-content { padding-top: 84px; }
-    .hero-content .wrap { flex-direction: column; align-items: flex-start; }
-    .hero-phone { align-self: center; width: 190px; margin-top: 30px; transform: rotate(-2deg); }
+    .hero { min-height: auto; }
+    .hero-content { padding: 76px 0 36px; }
+    .hero-content .wrap { flex-direction: column; align-items: flex-start; gap: 0; }
+    .hero-phone { align-self: center; width: 170px; margin-top: 28px; }
     .bp-corner, .bp-tag { display: none; }
   }
 
@@ -542,7 +549,6 @@
 
       <div class="hero-phone" id="heroPhone">
         <span class="hp-badge">&#9654; Hit Play</span>
-        <span class="notch" aria-hidden="true"></span>
         <div class="hp-media" id="hpMedia">
           <img src="img/walkthrough-poster.jpg" alt="Preview frame from the Beach Boyz Contracting project walkthrough video">
           <button class="hp-play" id="hpPlayBtn" aria-label="Play the Beach Boyz Contracting project walkthrough video" type="button">
@@ -585,6 +591,8 @@
 </nav>
 
 <main>
+
+  <div class="caution-strip"><span>Entering the Jobsite</span></div>
 
   <section id="services" class="tight bp-grid-light">
     <div class="wrap">
@@ -648,6 +656,8 @@
       </div>
     </div>
   </section>
+
+  <div class="caution-strip"><span>Meet the Crew</span></div>
 
   <section id="about" class="bg-sand bp-grid-light">
     <div class="wrap">
@@ -739,6 +749,8 @@
       </div>
     </div>
   </section>
+
+  <div class="caution-strip"><span>Ready When You Are</span></div>
 
   <section id="estimate" class="form-section bp-grid-dark">
     <div class="wrap">
