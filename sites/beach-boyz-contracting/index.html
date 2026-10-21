@@ -241,11 +241,11 @@
     transition: background 0.3s var(--ease), transform 0.3s var(--ease);
   }
   .badge:hover { background: rgba(255,255,255,0.2); transform: translateY(-2px); }
+  .badge { text-decoration: none; }
   .badge-stars { display: inline-flex; align-items: center; gap: 7px; }
-  .stars { position: relative; display: inline-block; line-height: 1; letter-spacing: 2px; font-size: 0.82rem; }
-  .stars-track { color: rgba(255,255,255,0.25); }
-  .stars-fill { position: absolute; inset: 0; overflow: hidden; white-space: nowrap; color: var(--gold); width: var(--fill, 100%); }
-  .stars.stars-lg { font-size: 1.15rem; letter-spacing: 3px; }
+  .stars { display: inline-flex; align-items: center; gap: 2px; }
+  .stars .star-icon { width: 13px; height: 13px; flex-shrink: 0; }
+  .stars.stars-lg .star-icon { width: 18px; height: 18px; }
   .hero h1 {
     color: #fff;
     font-size: clamp(2.5rem, 5.6vw, 4.3rem);
@@ -428,6 +428,7 @@
   /* --- Reviews / recognition --- */
   .recognition-strip { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 44px; }
   .rec-badge {
+    display: block; text-decoration: none;
     background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.18);
     padding: 18px 22px; border-radius: 14px; flex: 1 1 220px; min-width: 200px;
     transition: transform 0.3s var(--ease), background 0.3s var(--ease);
@@ -532,6 +533,17 @@
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="starFill44" x1="0" x2="100%" y1="0" y2="0">
+      <stop offset="40%" stop-color="#c9a24b"></stop>
+      <stop offset="40%" stop-color="rgba(255,255,255,0.28)"></stop>
+    </linearGradient>
+    <symbol id="star-shape" viewBox="0 0 24 24">
+      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+    </symbol>
+  </defs>
+</svg>
 
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
@@ -562,10 +574,16 @@
     <div class="wrap">
       <div class="hero-text">
         <div class="hero-badges">
-          <span class="badge badge-stars">
-            <span class="stars" style="--fill:88%" role="img" aria-label="4.4 out of 5 stars"><span class="stars-track">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="stars-fill">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+          <a href="#reviews" class="badge badge-stars" aria-label="4.4 out of 5 stars, see reviews">
+            <span class="stars" role="img" aria-label="4.4 out of 5 stars">
+              <svg class="star-icon" viewBox="0 0 24 24" fill="#c9a24b"><use href="#star-shape"></use></svg>
+              <svg class="star-icon" viewBox="0 0 24 24" fill="#c9a24b"><use href="#star-shape"></use></svg>
+              <svg class="star-icon" viewBox="0 0 24 24" fill="#c9a24b"><use href="#star-shape"></use></svg>
+              <svg class="star-icon" viewBox="0 0 24 24" fill="#c9a24b"><use href="#star-shape"></use></svg>
+              <svg class="star-icon" viewBox="0 0 24 24" fill="url(#starFill44)"><use href="#star-shape"></use></svg>
+            </span>
             4.4 (50 Reviews)
-          </span>
+          </a>
           <span class="badge">28+ Years in Business</span>
           <span class="badge">Lic. #918841</span>
         </div>
@@ -719,13 +737,19 @@
       </div>
       <div class="recognition-strip">
         <div class="rec-badge reveal"><strong>HomeAdvisor Top Rated</strong><span>Verified, highly rated pro</span></div>
-        <div class="rec-badge reveal">
+        <a href="https://www.homeadvisor.com/rated.BeachBoyzPainting.38755738.html" target="_blank" rel="noopener" class="rec-badge reveal" aria-label="4.4 out of 5 stars, read reviews on HomeAdvisor">
           <strong style="display:flex; align-items:center; gap:10px;">
-            <span class="stars stars-lg" style="--fill:88%" role="img" aria-label="4.4 out of 5 stars"><span class="stars-track">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="stars-fill">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+            <span class="stars stars-lg" role="img" aria-label="4.4 out of 5 stars">
+              <svg class="star-icon" viewBox="0 0 24 24" fill="#c9a24b"><use href="#star-shape"></use></svg>
+              <svg class="star-icon" viewBox="0 0 24 24" fill="#c9a24b"><use href="#star-shape"></use></svg>
+              <svg class="star-icon" viewBox="0 0 24 24" fill="#c9a24b"><use href="#star-shape"></use></svg>
+              <svg class="star-icon" viewBox="0 0 24 24" fill="#c9a24b"><use href="#star-shape"></use></svg>
+              <svg class="star-icon" viewBox="0 0 24 24" fill="url(#starFill44)"><use href="#star-shape"></use></svg>
+            </span>
             4.4
           </strong>
           <span>50 Reviews across HomeAdvisor &amp; Yelp</span>
-        </div>
+        </a>
         <div class="rec-badge reveal"><strong>#1 HB Painting Co.</strong><span>2014 &amp; 2020</span></div>
       </div>
       <div class="testi-grid">
